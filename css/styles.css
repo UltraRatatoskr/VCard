@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(205 205 205);
+}
+
+h3{
+    font-family: Roboto;
+}
+
+.vCard {
+    position: relative;
+    width: 900px;
+    height: 475px;
+    background-color: rgb(253, 249, 0);
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "left"
+    "middle"
+    "right";
+    top: 25vh;
+    left: 25vw;
+    }
+
+.left {
+    width: 300px;
+    height: 475px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #4b21ff;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+    "logo"
+    "info";
+}
+
+.middle {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 50px black
+}
+
+.right {
+    width: 600px;
+    height: 475px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #ffffffff;
+}
+.logo{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.info{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
